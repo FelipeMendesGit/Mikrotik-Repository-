@@ -1,0 +1,93 @@
+Décima Terceira aula do curso Mikrotik documentada
+
+    Licenciamento:
+
+        O Mikrotik é composto por sete (7) níveis de licença. São elas:
+
+            * Licença Trial Mode
+            * Free Demo
+            * Level 03 (WISP CPE)
+            * Level 4 (WISP)
+            * Level 5 (WISP)
+            * Level 6 (Controller)
+            * CHR (Clouded Hosted Router) 
+        
+        Licença Trial Mode
+            Com esta licença temporária, você pode utilizar todas as funcionalidades do RouterOS por 24 horas. 
+            Sendo assim, após esgotado o período de teste, é necessário comprar algum dos níveis seguintes e 
+            inserir uma chave válida.
+
+        Licença Free Demo
+            Trata-se do modo de demonstração no qual é necessário o registro no site da Mikrotik. 
+            Ficam liberadas para serem utilizadas somente algumas funções do RouterOS.
+
+        Licença Level 03 (WISP CPE)
+            Licença somente para clientes/estações sem fio. Com essa licença, o Mikrotik não funciona como uma 
+            ponto de acesso (AP), mas como um cliente de outro AP. Pode ser utilizada somente em computadores x86. 
+            Não está disponível para compra — pode ser usada somente em algumas RouterBoards que já vem com a 
+            licença configurada de fábrica.
+
+        Licença Level 04 (WISP)
+            A partir deste nível, é possível utilizar o Mikrotik como ponto de acesso (AP). 
+            A licença Level 04 tem um limite de 200 usuários simultâneos no Hotspot e a quantidade 
+            de túneis (PPPoE, PPTP, L2TP e OVPN) limitada na mesma quantidade, com interfaces de 
+            VLAN ilimitadas.
+
+        Licença Level 05 (WISP)
+            Possui um limite de 500 usuários simultâneos no Hotspot e a quantidade de túneis (PPPoE, PPTP, L2TP e OVPN) 
+            limitada na mesma quantidade, com interfaces de VLAN ilimitadas.
+
+        Licença Level 06 (Controller)
+            Neste nível de licença, não existe nenhum tipo de limitação no uso do RouterOS.
+
+        
+        Licença CHR (Clouded Hosted Router)
+            A Licença CHR é uma versão do RouterOs executada em uma máquina virtual (VM). Ela suporta as arquiteturas x86 de 
+            64 bits e pode ser utilizada na maioria das VM’s — como VMWare, Hyper-V, VirtualBox, KVM e outros. Possui todos 
+            os recursos do RouterOS por padrão, porém o modelo de licenciamento é diferente das outras versões.
+            
+                Requisitos mínimos para a licença CHR
+                    Versão do pacote: RouterOS v6.34 ou mais recente
+                    CPU do host: 64 bits com suporte a virtualização
+                    RAM: 128 MB ou mais
+                    Disco: 128 MB de espaço em disco para o disco rígido virtual CHR (máximo: 16 GB)
+                    O licenciamento CHR possui 5 níveis de licença:
+                    Livre: Permite que seja utilizada de maneira indefinida,  com limite de  1 Mbps de Upload  por interface, 
+                    todos os demais recursos são disponíveis sem restrições
+            
+                O licenciamento CHR possui 5 níveis de licença:
+                    Avaliação de 60 Dias: Possui a instalação de forma gratuita, podendo testar o aumento das licenças P1/ P10 
+                    / PU com 60 tentativas.
+            
+                    P1 Perpétua-1:Permite que seja utilizada de maneira indefinida, com limite de  1 Gbps de Upload  por 
+                    interface, todos os demais recursos são disponíveis sem restrições É possível fazer upgrade de p1 para 
+                    p10 ou p-ilimitado Após a compra da atualização, a licença anterior ficará disponível para uso posterior 
+                    em sua conta.
+            
+                    P10 Perpétua-10: Permite que seja utilizada de maneira indefinida, com limite de  10 Gbps de Upload  por 
+                    interface, todos os demais recursos são disponíveis sem restrições É possível fazer upgrade de p10 para 
+                    p-ilimitado Após a compra da atualização, a licença anterior ficará disponível para uso posterior em sua 
+                    conta.
+            
+                    P-Ilimitado: Permite que seja utilizada de maneira indefinida, é uma licença de alto nível e não possuí 
+                    limitações pré-definidas.
+                
+    Versões e Funcionalidades::
+        O RouterOS suporta instalação em interfaces IDE, SATA e USB dispositivos HDDS, 
+        CF, Cartões SD, Discos SDD e etc.
+
+        É necessário 64MB de espaço em disco para instalar o RouterOS Mikrotik.
+
+            Características das versões 3.x, 4x, 5x, 6x.
+
+                * Suporte a SNMP
+                * Suporte a discos SATA 
+                * RAM - acima de 2GB 
+                * Interfaces novas de redes são suportadas 
+                * Hardwares e suportes antigos foram descontinuados
+
+                    2x= Linux Kernel 2.4.31
+                    3x= Linux Kernel 2.6.20
+                    4x= Linux Kernel 2.6.20
+                    5x= Linux Kernel 2.6.20
+                    6x= Linux Kernel 2.6.38

@@ -1,0 +1,120 @@
+Segunda Aula Documentada
+    
+    O que é o RouterOS??
+        É um sistema operacional baseado em Linux que permite que uma plataforma
+        x86 torne-se um roteador. (x86 é o nome genérico dada à família de 
+        processadores baseados no Intel 8086, da Intel Corporation)
+
+        O sistema operacional RouterOS Mikrotik permite instaalação em padrões 
+        de servidores, seja Standard PC Profissional ou Desktop.
+            Tipos de PC.
+
+        Sempre consultar o manual de compatibilidade do Mikrotik.
+
+    Tipos de Hardwares da Mikrotik:
+        Routers Mikrotik:
+            Ele permite que qualquer plataforma x86 torne-se um poderoso roteador, 
+            com funções como VPN, Proxy, Hotspots, Controle de Banda, QoS, Firewall, 
+            dentre outras, que variam de acordo com o nível de licença do sistema adquirido.
+        
+            É projetado para provedores de pequeno e médios porte, oferecendo acesso 
+            banda larga via rede sem fios. São equipamentos de rádio ou roteadores compactos, 
+            que tem a capacidade de montar links wireless com alta capacidade de tráfego, 
+            inclusive utilizando duas antenas e uma configuração especial chamada Nstreme.
+
+        Switches Mikrotik:
+            Atualmente, a MikroTik possui uma linha interessante de Cloud Router Switch, ou seja, 
+            são equipamentos que podem ser utilizados como um simples Switch ou como um roteador 
+            repleto de recursos e funções.
+
+        Access Point 
+            Wireless Access Point (WAP ou AP), ou, traduzindo, ponto de acesso sem fio. 
+            É um dispositivo que recebe o sinal da rede (de forma cabeada ou sem fio) e 
+            disponibiliza o sinal Wi-Fi para outros dispositivos eletrônicos
+        
+        O que é a porta SFP?
+            SFP, SFP+ ou QSFP são tipos de transceptores usados para conectar um switch 
+            ou outro dispositivo de rede ao cabo de fibra óptica ou de cobre. 
+            São muito comumente usados para adicionar portas ópticas.
+        
+            A tecnologia WDM (Wavelenght Division Multiplexing, ou Multiplexação por Divisão de Comprimentos de Onda) 
+            é a combinação de múltiplos sinais ópticos com diferentes comprimentos de onda, espaçados entre si, 
+            propagando-se em uma mesma fibra óptica. É possível, desta forma, transmitir vários comprimentos de onda 
+            simultaneamente nas janelas onde a fibra apresenta menor atenuação. Como vertentes dessa tecnologia, 
+            há o CWDM e o DWDM.
+        
+                CWDM: Em uma rede CWDM, cada módulo irá trabalhar em um canal específico. 
+                O mesmo canal é utilizado para transmitir (TX) e receber (RX) os sinais ópticos, 
+                logo, faz-se necessária a utilização de módulos DUPLEX e duas fibras ópticas 
+                disponíveis para fazer esse TX/RX
+
+                    Tecnologias DUPLEX:
+                        No modo half duplex, ambos os dispositivos conectados no link podem transmitir o sinal, 
+                        mas somente um dispositivo pode transmitir de cada vez. Em um modo full-duplex, o 
+                        dispositivo no link pode transmitir simultaneamente.
+
+        Antenas Mikrotik:
+            A internet via rádio funciona através das ondas de radiofrequência que carregam o sinal até o computador. 
+            Assim como o rádio comum, precisa de torres de transmissão e antenas para recepção do sinal.
+            Como as ondas de rádio são presentes na natureza, a instalação de torres e antenas deve ser feita com muito cuidado. 
+            Não pode haver nenhum obstáculo obstruindo o sinal entre as torres e antenas.
+            Então não pode haver nenhum prédio por perto. Até mesmo uma montanha pode trazer interferência ao sinal. 
+            Por isso as torres de transmissão são colocadas nos pontos mais altos.
+            Se você mora em algum lugar remoto ou rural e sem acesso à internet banda larga à cabo ou fibra óptica, 
+            você também pode verificar o sinal de internet via satelite e a disponibilidade de internet discada na sua região.
+
+                Transmissão de dados:
+                    Este trabalho quem faz é o modem específico que é instalado no seu computador.
+                    Ele capta o sinal do rádio e o transforma em um sinal que seu computador irá reconhecer e então poderá se 
+                    conectar à internet. 
+                    Já a velocidade da internet, para clientes residenciais pode variar entre 1MB e 15MB.
+
+                    Para fazer a transmissão dos dados via radiofrequência:
+
+                        *As empresas instalam torres, conhecidas como POPs, por toda a região onde o serviço será oferecido. 
+                        Elas são colocadas nos pontos mais altos e com boa visibilidade do perímetro atendido.
+
+                        *Quando você contrata o serviço, uma antena é instalada em um ponto alto do seu edifício ou casa, 
+                        que irá captar o sinal emitido pelas torres.
+
+                        *O sinal de rádio é transmitido para à antena, que é conectada ao modem ligado a seu computador.
+
+                        *O modem transforma o sinal e o transmite para a placa de rede do seu computador como sinal de internet.
+
+                Vantagens da internet via rádio
+
+                    *Conexão de internet ilimitada e 24h por dia.
+                    
+                    *Bom custo-benefício: preços competitivos para acesso à internet.
+                    
+                    *Não é conectado à uma linha telefônica, o que barateia ainda mais o serviço.
+                    
+                    *Maior alcance de Rede do que outros tipos de internet.
+                    
+                    *Boa velocidade de internet.
+
+                Desvantagens da internet via rádio
+
+                    *Probabilidade de má qualidade na instalação
+                    
+                    *Problema de estabilidade no sinal, com interferências em caso de mau tempo
+                    
+                    *Custo alto do serviço de instalação      
+
+
+                Antena Setorial:
+                    são utilizadas para reforçar o sinal de transmissão de dados em um setor específico. 
+                    Os dispositivos concentram o sinal em um ângulo de aproximadamente 90 graus e podem ser 
+                    instaladas nos cantos para melhor distribuição do sinal.  
+
+                    Na mikrotik estão disponíveis duas versões:
+                        
+                        RBSXT5HacD2n (Internacional)  
+                        RBSXT5HacD2n-US (EUA). 
+
+            E MUITO MAIS EQUIPAMENTOS!!!!!!
+               
+
+                
+
+        

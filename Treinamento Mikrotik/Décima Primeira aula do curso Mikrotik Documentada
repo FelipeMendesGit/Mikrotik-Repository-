@@ -1,0 +1,177 @@
+Décima Primeira aula do curso Mikrotik Documentada.
+
+    Tipos de Acesso:
+
+        Acesso Telnet:
+            Telnet é um protocolo cliente-servidor usado para
+            permitir a comunicação entre computadores ligados 
+            numa rede (exemplos: rede local/LAN, Internet), 
+            baseado em TCP.
+                ** Telnet é um protocolo de acesso remoto.
+            
+                Antes de existirem os chats em IRC o Telnet já 
+                permitia este gênero de funções. O protocolo Telnet 
+                também permite obter um acesso remoto a um computador.
+
+                    Esse protocolo vem sendo gradualmente substituído pelo SSH,
+                    cujo um conteúdo é criptografado antes de ser enviado. O uso 
+                    do protocolo Telnet tem sido desaconselhado, a medida que os 
+                    administradores de sistemas vão tendo maiores preocupações de 
+                    segurança.
+
+                        **Com o Telnet todas as comunicações entre o cliente e o servidor 
+                        podem ser vistas, inclusive senhas, já que são somente texto plano, 
+                        permitindo assim, que com o uso de "port-stealing" intercepte a 
+                        conexão e seus pacotes, fazendo hijacking.
+
+                            Em ciência da computação, session hijacking (em português sequestro 
+                            de sessão, algumas vezes também conhecido como sequestro de cookie) 
+                            é a exploração de uma sessão de computador válida, às vezes também 
+                            chamada de uma chave de sessão - para obter acesso não autorizado a 
+                            informações ou serviços em um sistema de computador.
+
+            Para acessar o Mikrotik através dos protocolos Telnet, é necessário abrir um prompt de 
+            comando, e através do comando cmd, digitaremos o nome do protocolo e o enereço de destino, 
+            que deverá ter o serviço telnet ativo. No caso do Mikrotik, esse serviço já vem ativado por 
+            padrão.
+
+                O IP já deve estar configurado
+
+                    Acessar o prompt de comando do computador e fazer o comando:
+                        telnet IP configurado.
+                            Exemplo: telnet 192.168.88.1 
+                                Ele irá abrir a tela de login.
+                                    Login: Admin 
+                                    Senha: em branco.
+                            
+        Acesso SSH
+            Secure Shell ou SSH é, simultaneamente, um programa de computador e um protocolo de rede que 
+            permite a conexão com outro computador na rede, de forma a executar comandos de uma unidade 
+            remota. Possui as mesmas funcionalidades do TELNET, com a vantagem da conexão entre o cliente 
+            e o servidor ser criptografada.
+
+            Uma das mais utilizadas aplicações é o chamado Tunneling.
+
+                A técnica de tunelamento consiste no encapsulamento de um protocolo dentro de outro. 
+                Ela permite que um pacote seja enviado com segurança através de uma rede pública como 
+                a Internet. Devido a isso, é usada para a criação de VPNs.
+
+                    Recurso de Túnel: O processo se caracteriza por duas máquinas ligadas ao mesmo servidor SSH, 
+                    que faz apenas o redirecionamento das requisições do computador que está sob firewall.
+                    O usuário envia para o servidor um pedido de acesso ao servidor pela porta 443 (HTTPS),
+                    por exemplo. Então o servidor acessa o computador remoto e requisita ele o acesso ao protocolo, 
+                    retornando um conjunto de pacotes referentes à aquisição. O servidor codifica a informação e 
+                    a retorna ao usuário via porta 443. Sendi assim, o usuário tem acesso a toda informação de que 
+                    necessita. Tal prática não é ilegal caso o fluxo de conteúdo esteja de acordo com as normas da 
+                    instituição.
+
+                        * O SSH faz parte da suíte de protocolo TCP, que torna segura a administração remota de um 
+                        servidor ou mesmo roteador, podendo ser acessado pela porta 22.
+
+            Para acessar por via SSH 
+                Precisa-se de um software, uma maneira muito boa é pelo PuTTY, um software de acesso remoto a partir 
+                da linha de comando. No PuTTY é só selecionar a opção SSH, colocar o ip, colocar a porta que é 22, 
+                colocar a chave de criptografia, salvar e apertar entrar.
+                    Ele vai entrar na tela de login.
+
+                        Existem também outras maneiras, a partir do OpenSSH ou TTSSH e etc.
+
+                            Oque criptografa a sessão é a chave de 128 bits. A partir da entrada, ela dará segurança 
+                            ao usuário.
+
+        Acesso via WinBox e MAC 
+            Winbox é um software de configuração que funciona em plataforma Windows e Linux. Este aplicativo é 
+            exclusivamente utilizado para acessar de forma gráfica o Mikrotik routerOS.
+
+            O aplicativo é apenas executável, não requer instalação, o que facilita sua utilização e configuração.
+
+            Permite também algumas personalizações de acesso, tas como: 
+
+                * Salvar endereços, usuários e senhas de roteadores existentes, (local ou remoto);
+                * Modo seguro de acesso (dados criptografados);
+                * Senha Master (Principal);
+                * Exportar e importar configurações salvas;
+
+            Interface Gráfica para Mikrotik:
+
+                * Para Windows ou Linux via Wine;
+                * Utiliza porta TCP 8291;
+                * Criptografia (em Modo Seguro);
+                * RoMON-Router Management Overlay Network;
+
+                    Wine é um software livre e de código aberto, que tem como objetivo permitir que os aplicativos 
+                    desenvolvidos para Microsoft Windows possam ser executados no Linux, Mac, FreeBSD e Solaris.
+
+            Função dos botões:
+
+                + : Adicionar um registro;
+                - : Remover um registro;
+                x : Desabilitar um registro;
+                v : Habilitar um registro;
+                
+                Yellow Box: Criar um comentário;
+                Funil: Filtrar registros;
+
+            Logar com um servidor no WinBox:
+                
+                O WinBox reconhece os Mikrotiks conectados através de um endereço MAC, 
+                tanto com um aparelho físico quanto uma virtualização.
+
+                    Por enquanto, só será possível entrar por MAC, só será possível entrar
+                    com IP após o protocolo ser configurado.
+            
+                    Ao clicar sobre o endereço IP, o acesso será através de endereço IP, 
+                    porém deve-se antes, configurar um endereço em seu computador da mesma 
+                    classe para que ele se comunique com o Mikrotik.
+
+                    Prompt de comando = New Terminal.
+
+                    Em System --> Resoucers: tem as informações gerais.
+
+                    Dando ip address print na linha de comando ou indo na lista de ips, tem um ip de bridge,
+                    este ip serve para logar no WinBox via IP.
+
+        Acesso Via Cabo Serial
+
+            O Cabo RS232 é um módulo eletrônico que possui a capacidade de converter sinais USB em sinais serial 
+            RS232 para facilitar a comunicação entre computadores e dispositivos periféricos.
+           
+            A porta serial opera ligando alguns pinos enquanto desliga outros e cada um destes pinos 
+            possuem uma finalidade específica. A porta serial por sua vez possui 2 tipos (9 pinos ou 25 pinos).
+
+                Para logar, você precisa de um software para acessar o aparelho
+                    Normalmente se usa o PuTTY, pode ser feito por Hercules também.
+                        Nos dois é só selecionar a entrada Serial, colocar a entrada COMM e aparece a tela 
+                        de login
+
+                            Depois de configurar o ip, é só acessar por esses softwares mesmo via SSH.
+
+                            Configurações iniciais sob antes de aparecer a tela de login está documentada em algumas das 
+                            aulas.
+
+        Acesso via Webfig
+
+            Webfig é uma forma proprietária de acesso ao RouterOS através de um navegador ee nenhum software adicional é 
+            requerido (o browser requer JavaScript)
+
+            Como WebFig é plataforma independente, pode ser usado para configurar o RouterOS diretamente de quaisquer 
+            dispositivos sem necessidade de um software de plataforma específica. Ex. Smartphone, Palm, Tablet, 
+            celular com navegadores, etc.
+
+                O Webfig foi planejado igual o WinBox.
+
+                    O Ip deve ter sido configurado e colocar em algum navegador.
+
+                        Após colocar o login e a senha ele estará aberto para configurações.
+                        
+
+
+
+
+
+
+                            
+                    
+
+                
+                        

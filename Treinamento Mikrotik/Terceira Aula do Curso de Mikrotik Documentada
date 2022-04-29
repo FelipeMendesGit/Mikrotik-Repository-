@@ -1,0 +1,129 @@
+Terceira Aula do Curso de Mikrotik Documentada.
+
+    Como verificar os Hardwares da Mikrotik:
+        Ir no site da Mikrotik e ir na aba Hardware.
+            Olhar as especificações dos aparelhos 
+    
+    Informações de especificação:
+        Product Code;
+            Modelo do equipamento;
+            
+        Architecture;
+            Código de arquitetura.
+        
+        CPU;
+            Código da CPU
+                É o número que a CPU ganha.
+        
+        CPU Core Count;
+            É o número de "core" do aparelho
+                Core é um pequeno processador, ele pode ter 
+                mais de 1.
+        
+        CPU Nominal Frequency;
+            Frequência normal do aparelho (Em MHz)
+        
+        CPU Threads Count;
+            Isso quer dizer que o processo é uma lista de 
+            instruções, a qual informa ao processador que 
+            passos devem ser executados e em quais momentos 
+            isso acontece.
+
+        Dimmensions;
+            O tamanho da dimensão que ele trabalha.
+        
+        License Level;
+            A Mikrotik tem diversos tipos de licença, entre elas tem
+            a 6, que é a permissão de configurações gerais no WinBox,
+            nessas informações ele dará o número da licença.
+
+        Operating System;
+            Sistema Operacional: RouterOS
+
+        Size of RAM;
+            Espaço de memória RAM.
+        
+        Storage Size;
+            Armazenamento.
+        
+        Storage Type;
+            Tipo de armazenamento, existem muitos tipos.
+
+        Tested ambient temperature;
+            Temperatura ambiente em que o Hardware pode ficar.
+        
+        Suggested Price;
+            Preço médio do produto.
+        
+        PoE in;
+            É o poder elétrico que a interface de entrada aguenta 
+            a partir de conexões via cabo ethernet par trançado.
+        
+        PoE out;
+            É o poder elétrico que a interface de saída aguenta 
+            a partir de conexões via cabo ethernet par trançado. 
+        
+        PoE in input Voltage;
+            É a tensão elétrica que as interfaces aguentam a partir 
+            de conexões via par trançado.
+        
+        Number of DC inputs;
+            Número de entradas para fontes de energia.
+        
+        DC jack input Voltage;
+            É a entrada que recebe energia á ser montada no Appliance;
+        
+        Max out per port output (input > 30 V);
+            Tipo de tensão e a quantidade máxima da porta de saída 
+            equivalente á uma tensão elétrica específica.
+        
+        Max total out (A);
+            Máximo de tensão elétrica em uma unidade de medida específica;
+        
+        Max power consumption;
+            Quantidade máxima de energia que pode ser recebida.
+
+        Max power comsumption without atachments;
+            Quantidade máxima de anexos que pode receber de uma vez.
+        
+        Ethernet Details;
+            O número que aparecer é o número de portas ethernet disponíveis.
+        
+        Fiber Details;
+            Tipo de portas de fibra óptica
+                Exemplo: SFP 
+
+        Memory Card Type;
+            Tipo de cartão de memória.
+
+        Memory Cards;
+            Quantidade de cartões do aparelho.
+        
+        Number of USB ports;
+            Número de portas USB.
+        
+        USB Power Reset;
+            Desabilitar a opção de entrada USB por um tempo.
+        
+        USB Slot Type;
+            Padrão de conectores USB.
+        
+        Max USB current;
+            Número máximo de conexões via USB.
+        
+        PCB Temperature monitor;
+            Existência de uma temperatura específica do aparelho.
+        
+        Voltage Monitor;
+            Existência de uma tensão elétrica específica.
+
+        Included Parts;
+            Itens que vem junto com a compra de um equipamento.
+
+    Em test results nas informações do Hardware, aparece os testes de rotas em unidades
+    de medida diferentes 
+
+
+
+        
+        

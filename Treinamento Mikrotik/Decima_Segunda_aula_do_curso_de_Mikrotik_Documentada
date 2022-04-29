@@ -1,0 +1,80 @@
+Décima Segunda aula do curso de Mikrotik Documentada.
+
+    Comandos:
+
+        Comando usado para configurar o routeros com um Wizard
+            setup 
+        
+        Comando utilizado para gerar soom de bip, pode ser atribuído á scripts
+            beep
+        
+        Comando para tempo do beep
+            beep lenght=3
+        
+        Comando para alterar a senha do usuário atual
+            password
+        
+        Comando para exportar configurações a partir da pasta atual
+            export file=teste
+        
+        Comando para importar configurações a partir da pasta atual
+            import file-name=teste.rsc 
+        
+        Comando para apagar a última configuração (volta ao estado anterior) 
+            undo 
+
+        Comando para avançar a última alteração (volta ao último estado)
+            redo 
+        
+        Adicionar um ip 
+            ip address add address=192.168.88.50 interface=ether1
+
+        Mostrar a lista de ips 
+            ip address list
+
+        Comando para remover Flag #2 endereço ip da tabela 
+            remove numbers=2
+
+        Comando para adicionar DHCP-Cliente 
+            ip dhcp-client add interface=ether1 
+                Por padrão fica desabilitado.
+
+        Comando para mostrar o dhcp criado 
+            ip dhcp-client print 
+
+        Para habilitar dhcp client
+            ip dhcp-client enable numbers=0
+                Número # na tabela.
+        
+        Comando para ativar WLAN1
+            /interface wireless enable wlan1 
+        
+        Comando para adicionar uma bridge
+            /interface bridge add name=entelco 
+        
+        Comando para adicionar a interface ether1 na bridge entelco 
+            /interface bridge port add bridge entelco interface=ether1
+        
+    Configuração em Modo Seguro:
+
+        Com o modo de segurança ativado, se o roteador percebe que o acesso ao computador 
+        foi perdido, ele automaticamente descarta as alterações feitas após a ativação do 
+        modo de segurança e se reinicia.
+        
+            * As configurações serão canceladas caso o modo seguro seja finalizado de 
+            forma incorreta;
+            * CTRL+X ativa quando está desativado e também salva quando o modo está 
+            em execução;
+            * CTRL+D sai do modo seguro descartando as configurações efetuadas;
+            * As configurações realizadas em modo seguro serão marcadas com uma Flag 
+            "F" até que sejam aplicadas;
+            * O histórico de todas as alterações poderá ser visto em /system history print.
+                O número deregistros é limitado á 100.
+        
+                    Ao pressionar a tecla CTRL + X, O comando que estiver digitado no seu terminal 
+                    será cancelado sem executar, aparecendo a informação: Safe Mode taken.
+        
+                    Após entrar no modo seguro e já existir um usuário logado, aparecerá uma mensagem.
+
+
+
