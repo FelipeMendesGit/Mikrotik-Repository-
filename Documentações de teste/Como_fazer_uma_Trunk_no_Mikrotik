@@ -1,0 +1,43 @@
+Como fazer uma trunk no Mikrotik.
+
+    Criar a VLAN se não tiver criada.
+        Interfaces --> interfaces list --> VLAN --> +
+            Exemplo: Name: Vlan 10
+                     VLAN ID: 10
+                     Colocar na interface correta.
+                        Comentar se for necessário.
+                            Adicionar Tag.
+
+    Adicionar o endereço na VLAN.
+        IP --> Address list --> clicar no IP --> colocar na VLAN 10.
+
+    Configurar um Pool:
+        IP --> Pool --> + 
+            Colocar o nome 
+            Adicionar o range de IP's 
+            Apply.
+
+    Configurar DNS:
+        IP --> DNS
+            Servers: IP que está na VLAN, aquele se conectará 
+            com o outro equipamento.
+
+    Criar um DHCP Server se não tiver.
+        Se tiver, (Que provavelmente tem), colocar ele na vlan.
+            Adicionar o pool criado.
+                Ele adicionou o Lease time para 7 dias.
+
+        Em DHCP Server, ir em Networks:
+            Address: Colocar o ID do endereço conectado.
+            Gateway: Colocar o IP de gateway.
+            Colocar a máscara.
+            Adicionar o IP do DNS Servers.
+            Domain: adicionar um nome de domínio.
+
+                Configurar a Trunk do HUAWEI!!!
+
+            
+
+
+    
+    
