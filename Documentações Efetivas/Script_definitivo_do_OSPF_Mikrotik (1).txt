@@ -1,0 +1,61 @@
+Script definitivo do OSPF Mikrotik
+
+    Definir os endereços IP:
+        IP --> Adressess --> + --> Colocar o IP e a Máscara --> Colocar o ID da rede que 
+        ele se situa --> Adicionar a interface correta da rota --> Apply --> Ok
+
+    Criar uma Loopback:
+        Bridge --> + --> Name: Loopback --> Apply -- Ok 
+    
+    Colocar um endereço na interface de Loopback:
+        IP --> Addresses --> + --> Colocar o endereço (SEM A MÁSCARA) --> No ID, colocar o 
+        mesmo endereço --> interface: Loopback.
+
+		TODAS AS INTERFACES DEVEM ESTAR IGUAIS DE ACORDO COM A COMUNICAÇÃO POINT-TO-POINT!!!!
+			Exemplo: Roteador 1: ether1
+				 Roteador 2: ether1
+    		
+		SE FOR UMA INFRAESTRUTURA FÍSICA, NÃO COLOCAR NAS INTERFACES QUE ESTÃO EM ITÁLICO, 
+		SE ELAS ESTIVEREM ASSIM, SIGNIFICA QUE NÃO TEM CABO CONECTADO E SERÁ IMPOSSÍVEL 
+		FAZER O PROTOCOLO FUNCIONAR!!!!! 
+
+    Configurar a primeira parte da instância OSPF:
+        Routing --> OSPF --> Instance --> Clicar na default --> Colocar o endereço da Loopback
+        --> Apply --> Ok 
+    
+    Configurar as permissões da permissão OSPF:
+        Ir na linha de comando do Mikrotik 
+            Pode ser acessando por algum software ou no próprio terminal do WinBox
+
+                Dar os seguintes comandos:
+                    routing ospf 
+                    routing ospf instance print
+                    routing ospf instance set distribute-default=never
+                    routing ospf instance set redistribute-connected=as a type1
+                    routing ospf instance set redistribute-other-ospf-connected=as a type1
+
+    Olhar a situação das rotas:
+        ip route print 
+
+    Configurar as interfaces OSPF:
+        Routing --> OSPF --> Interfaces --> + --> Adicionar alguma interface com endereço -->
+        Network Type: point-to-point.
+            O tipo de rede precisa estar no modo P2P.
+
+    Configurar os endereços do OSPF com a área:
+        Routing --> OSPF --> Networks --> Adicionar o IP com a máscara --> area: backbone.
+            O endereço precisa ser interligado com a interface, como foi explicado mais acima.
+
+                Após isso, a interface será adicionada à área de backbone e o estado da interface
+                sairá de down para point-to-point.
+
+    Para o OSPF funcionar por definitivo, é necessário uma pequena série de comandos:
+        /routing ospf network 
+        add network=192.168.0.0/16 area=backbone 
+        /
+
+    
+    
+
+
+
