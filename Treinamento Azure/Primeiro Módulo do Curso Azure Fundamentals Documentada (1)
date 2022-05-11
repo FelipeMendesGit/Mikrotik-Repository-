@@ -1,0 +1,126 @@
+Primeiro Módulo do Curso Azure Fundamentals.
+
+    O que é computação em nuvem?
+        Cloud Computing é a entrega de serviços de computação pela internet,
+        permitindo inovação mais rápida, recursos flexíveis e economias de
+        escala.
+    
+    Nuvem Pública
+        • É de propriedade de serviços em
+        nuvem ou provedor de
+        hospedagem.
+        
+        • Fornece recursos e serviços para
+        várias organizações e usuários.
+
+        • Acessada via conexão de rede
+        segura (normalmente pela
+        internet).
+    
+    Nuvem Privada
+        • As organizações criam um
+        ambiente em nuvem em seu
+        datacenter.
+        
+        • A organização é responsável pela
+        operação dos serviços prestados.
+        
+        • Não fornece acesso a usuários
+        fora da organização.
+    
+    Nuvem Híbrida
+        Combina nuvens públicas e privadas para permitir que os 
+        aplicativos sejam executados no local mais apropriado.
+
+        Diferença entre os modelos de nuvem
+            Nuvem Pública
+                • Sem gastos de capital para aumentar. 
+                • Os aplicativos podem ser rapidamente provisionados e descartados. 
+                • As organizações pagam apenas pelo que usam.
+
+            Nuvem Privada
+                • O hardware deve ser adquirido. 
+                • As organizações têm controle total sobre recursos e segurança. 
+                • As organizações são responsáveis pela manutenção e atualizações de
+                hardware.
+            
+            Nuvem Híbrida
+                • Fornece a maior flexibilidade. 
+                • As organizações determinam onde executar suas aplicações. 
+                • As organizações controlam a segurança, a conformidade ou os
+                requisitos legais.
+
+                Benefícios na nuvem
+                    • Alta disponibilidade
+                    • Alcance global
+                    • Escalabilidade
+                    • Agilidade
+                    • Recuperação de desastres
+                    • Tolerância a falhas
+                    • Elasticidade
+                    • Redução de latência do cliente
+                    • Previsibilidade de custos
+                    • Segurança
+
+                Comparação CapEx x OpEx
+                    
+                    Capital Expenditure - Despesas de Capital (CapEx)
+                        Os gastos “up front”(iniciais) de dinheiro em infraestrutura física.
+                        Os custos da CapEx têm um valor que reduz ao longo do tempo.
+                    
+                    Operational Expenditure - Despesas Operacionais (OpEx)
+                        Gastar em produtos e serviços conforme necessário (payas-you-go).
+                        Ser cobrado imediatamente.
+                
+                Modelo baseado em consumo
+                    Os provedores de serviços em nuvem operam em um modelo baseado em
+                    consumo, o que significa que os usuários finais só pagam pelos recursos 
+                    que usam.
+                        O que eles usam é o que eles pagam.
+                            • Melhor previsão de custos;
+                            • Os preços dos recursos e serviços individuais são fornecidos;
+                            • O faturamento é baseado no uso real.
+
+            Cloud Services 
+
+                Infrastructure as a Service (IaaS) – Infraestrutura como ServiçoCria infraestrutura de TI 
+                paga ao aluguel de servidores, máquinas virtuais,armazenamento, redes e sistemas operacionais 
+                de um provedor de nuvem.
+
+                Platform as a Service (PaaS) – Plataforma como Serviço - Fornece ambiente para a construção, 
+                testes e implantação de aplicativos desoftware sem se concentrar no gerenciamento da infraestrutura 
+                subjacente.
+
+                Software as a Service (SaaS) - Software como Serviço - Os usuários se conectam e usam aplicativos 
+                baseados em nuvem pela internet, como por exemplo o Microsoft Office 365, e-mail e calendários.
+
+                    Comparação de serviços em nuvem
+                        
+                        IaaS
+                        • É o serviço de nuvem mais flexível.
+                        • Você configura e gerencia o hardware para o seu aplicativo.
+                        
+                        PaaS
+                        • Você se concentra no desenvolvimento de aplicativos.
+                        • O gerenciamento da plataforma é tratado pelo provedor de nuvem.
+
+                        SaaS
+                        • Modelo de preços “pay-as-you-go”.
+                        • Os usuários pagam pelo software que usam em um modelo de
+                        assinatura.
+
+                Serverless Computing
+                    Com aplicativos de computação sem servidor, o provedor de serviços em nuvem
+                    fornece automaticamente provisões, escalas e gerencia a infraestrutura necessária
+                    para executar o código.
+
+                        Azure Functions é o código executando seu serviço e não a
+                        plataforma ou infraestrutura subjacente. 
+                        Ele cria infraestrutura baseada em um evento.
+
+                        Azure Logic Apps é um serviço em nuvem que ajuda você a
+                        automatizar e orquestrar tarefas, processos de negócios e fluxos de
+                        trabalho quando você precisa integrar aplicativos, dados, sistemas e
+                        serviços.
+                    
+                    
