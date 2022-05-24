@@ -1,0 +1,36 @@
+Script OSPF na linha de comando 
+
+    ip address add address=172.16.255.2/30 network=172.16.255.0 interface=ether1
+    ip address add address=172.16.255.5/30 network=172.16.255.4 interface=ether5
+    ip address print
+
+    interface bridge
+    add name=loopback
+    /
+
+    ip address add address=172.16.255.255/32 interface=loopback
+
+    /routing ospf instance
+    add router-id=172.16.255.255
+    routing ospf instance set distribute-default=never
+    routing ospf instance set redistribute-connected=as a type1
+    routing ospf instance set redistribute-other-ospf-connected=as a type1
+    print 
+    /
+
+    routing ospf interface add interface=ether1 network-type=point-to-point
+    routing ospf interface add interface=ether5 network-type=point-to-point
+    routing ospf interface print 
+    /
+
+    /routing ospf network
+    add network=172.16.255.0/30 area=backbone
+    add network=172.16.255.4/30 area=backbone
+    add network=172.16.255.255/32 area=backbone
+    add network=192.168.0.0/16 area=backbone 
+    /
+
+
+
+
+
